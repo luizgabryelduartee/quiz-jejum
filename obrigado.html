@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Acesso Liberado! - Método Jejum 01 🚀</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #D845FF;
+            --primary-light: #F3E5F5;
+            --secondary: #FF4081;
+            --bg-gradient: linear-gradient(135deg, #FFF5F9 0%, #F5F0FF 100%);
+            --text: #2D3436;
+            --white: #FFFFFF;
+            --success: #00D1B2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: var(--white);
+            border-radius: 40px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(216, 69, 255, 0.15);
+            border: 1px solid rgba(216, 69, 255, 0.05);
+            animation: fadeIn 0.8s ease-out;
+            margin-bottom: 30px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: var(--primary-light);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 1.6rem;
+            color: var(--text);
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--primary);
+        }
+
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 24px;
+            margin: 25px 0;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+        }
+
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            box-shadow: 0 0 20px var(--primary);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(216, 69, 255, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(216, 69, 255, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(216, 69, 255, 0);
+            }
+        }
+
+        .steps-box {
+            background: #F8F9FA;
+            border-radius: 24px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .step {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .step-num {
+            width: 28px;
+            height: 28px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .step-text h4 {
+            font-size: 0.9rem;
+            font-weight: 900;
+            margin-bottom: 2px;
+        }
+
+        .step-text p {
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .access-btn {
+            display: block;
+            background: linear-gradient(135deg, #D845FF 0%, #7C4DFF 100%);
+            color: var(--white);
+            text-decoration: none;
+            padding: 22px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.1rem;
+            width: 100%;
+            box-shadow: 0 15px 35px rgba(216, 69, 255, 0.35);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .footer-note {
+            font-size: 0.75rem;
+            color: #A0A0A0;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-placeholder">🥑</div>
+        <h1>Sua jornada no <br><span class="highlight">Método Jejum 01</span> começou!</h1>
+
+        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Assista ao vídeo abaixo para saber como começar e
+            garantir seus resultados.</p>
+
+        <div class="video-container">
+            <!-- Espaço para o vídeo do usuário (YouTube/Vimeo/Panda) -->
+            <div class="video-overlay" onclick="this.style.display='none'">
+                <div class="play-btn">▶</div>
+                <p style="font-weight: 700; font-size: 0.8rem;">ASSISTIR VÍDEO DE BOAS-VINDAS</p>
+            </div>
+            <!-- Exemplo de iframe (substituir pelo link real) -->
+            <!-- <iframe src="LINK_DO_VIDEO" allowfullscreen></iframe> -->
+        </div>
+
+        <div class="steps-box">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    <h4>Assista o Vídeo</h4>
+                    <p>Entenda como funciona o protocolo de 28 dias para não cometer erros.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    <h4>Acesse o Aplicativo</h4>
+                    <p>Clique no botão abaixo para entrar na sua área exclusiva.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                    <h4>Suporte VIP</h4>
+                    <p>Dúvidas? Nossa equipe está pronta para te ajudar no WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="app-jejum/index.html" class="access-btn">ACESSAR MEU APLICATIVO</a>
+
+        <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">
+            <span>💬</span> FALAR COM SUPORTE NO WHATSAPP
+        </a>
+
+        <div class="footer-note">
+            Seu acesso é vitalício. Guarde este link com carinho.<br>
+            © 2026 Método Jejum 01 - Todos os direitos reservados.
+        </div>
+    </div>
+</body>
+
+</html>

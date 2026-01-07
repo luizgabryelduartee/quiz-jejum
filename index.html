@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jejum Intermitente - Comece Sua Transformação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #D845FF;
+            --primary-light: #F3E5F5;
+            --secondary: #FF4081;
+            --bg-gradient: linear-gradient(135deg, #FFF5F9 0%, #F5F0FF 100%);
+            --text: #2D3436;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 100%;
+            background: var(--white);
+            border-radius: 40px;
+            padding: 45px 25px;
+            box-shadow: 0 25px 60px rgba(216, 69, 255, 0.1);
+            border: 1px solid rgba(216, 69, 255, 0.05);
+            animation: fadeIn 0.8s ease-out;
+            position: relative;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icon-box {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 1.6rem;
+            color: var(--text);
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 10px;
+            background: #F0F0F0;
+            border-radius: 20px;
+            margin: 25px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 20px;
+            animation: growProgress 1.5s cubic-bezier(0.1, 0.7, 1.0, 0.1) forwards;
+        }
+
+        @keyframes growProgress {
+            to {
+                width: 45%;
+            }
+        }
+
+        .status-text {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #D845FF 0%, #7C4DFF 100%);
+            color: var(--white);
+            text-decoration: none;
+            padding: 22px 30px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            width: 100%;
+            box-shadow: 0 15px 35px rgba(216, 69, 255, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                left: -150%;
+            }
+
+            100% {
+                left: 150%;
+            }
+        }
+
+        .cta-btn:active {
+            transform: scale(0.96);
+            box-shadow: 0 8px 20px rgba(216, 69, 255, 0.2);
+        }
+
+        .compliance-footer {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            line-height: 1.6;
+            color: #A0A0A0;
+            padding: 0 10px;
+        }
+
+        .compliance-footer a {
+            color: #A0A0A0;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+
+        .trust-badge {
+            background: #F8F9FA;
+            padding: 8px 15px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #666;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="icon-box">🥗</div>
+
+        <h1>Tudo pronto para o seu<br><span>Protocolo Personalizado</span></h1>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="status-text">
+            <span>⚙️</span> Analisando disponibilidade...
+        </div>
+
+        <a href="quiz.html" class="cta-btn">QUERO CONTINUAR</a>
+
+        <div class="trust-badge">
+            🔒 Ambiente Seguro & LGPD
+        </div>
+    </div>
+
+    <div class="compliance-footer">
+        Aviso Legal: Este site não é afiliado ao Google ou qualquer rede social.
+        Os resultados variam conforme o metabolismo individual.<br><br>
+        <div style="margin-top: 10px;">
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+            <a href="#">Contato</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
