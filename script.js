@@ -1,8 +1,8 @@
 // ==========================================
 // 🔗 CONFIGURAÇÃO DOS CHECKOUTS
 // Cole os links das suas páginas de pagamento abaixo:
-const LINK_CHECKOUT_2_MESES = "https://www.ggcheckout.com/checkout/v3/lhf6oja3X2znuTwzYQ0r"; // R$ 19,90
-const LINK_CHECKOUT_VITALICIO = "https://www.ggcheckout.com/checkout/v3/lhf6oja3X2znuTwzYQ0r"; // R$ 37,90
+const LINK_CHECKOUT_2_MESES = "https://www.ggcheckout.com/checkout/v3/SMhipKZFq1UyD8UtRo1O"; // R$ 19,90
+const LINK_CHECKOUT_VITALICIO = "https://www.ggcheckout.com/checkout/v3/Lbf6oja3X2znuTwzYQ0r"; // R$ 37,90
 
 // 🎥 CONFIGURAÇÃO DE VÍDEOS E PROVAS SOCIAIS
 // Substitua os IDs abaixo pelos seus IDs do Wistia
@@ -625,3 +625,4 @@ function showOffer() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
