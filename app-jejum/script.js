@@ -1,7 +1,7 @@
 // ==========================================
 // 🔗 CONFIGURAÇÃO DO CHECKOUT COACH IA
 // Cole o link da sua página de pagamento de R$ 9,90 abaixo:
-const LINK_CHECKOUT_COACH = "SEU_LINK_DE_PAGAMENTO_AQUI";
+const LINK_CHECKOUT_COACH = "https://www.ggcheckout.com/checkout/v3/d8R7ZtI4ncBTbHFUHGYz";
 // ==========================================
 
 const state = {
@@ -585,3 +585,4 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('returningUser', 'true');
     }
 });
+
