@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Método Jejum 01 - Seu Protocolo de 28 Dias</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app" class="app-container">
+        <!-- Floating Header -->
+        <header class="main-header">
+            <div class="user-status">
+                <span class="status-badge">DESAFIO ATIVO - DIA 1</span>
+            </div>
+            <div class="logo">🥑 Método Jejum 01</div>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main class="content-area" id="main-content">
+            <!-- App content injected here -->
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" onclick="showTab('home')">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Início</span>
+            </button>
+            <button class="nav-item" onclick="showTab('timer')">
+                <span class="nav-icon">⏱️</span>
+                <span class="nav-label">Jejum</span>
+            </button>
+            <button class="nav-item" onclick="showTab('coach')">
+                <div class="premium-badge-nav">PRO</div>
+                <span class="nav-icon">🤖</span>
+                <span class="nav-label">Coach IA</span>
+            </button>
+            <button class="nav-item" onclick="showTab('meals')">
+                <span class="nav-icon">🍲</span>
+                <span class="nav-label">Cardápio</span>
+            </button>
+            <button class="nav-item" onclick="showTab('profile')">
+                <span class="nav-icon">👤</span>
+                <span class="nav-label">Perfil</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Global Modal Structure -->
+    <div id="modal-overlay" class="modal-overlay hidden" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
